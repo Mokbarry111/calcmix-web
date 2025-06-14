@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>คำนวณ BMR</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>🔥 เครื่องคำนวณ BMR</h1></header>
+  <main>
+    <form onsubmit="calculateBMR(); return false;">
+      <label>เพศ: 
+        <select id="gender">
+          <option value="male">ชาย</option>
+          <option value="female">หญิง</option>
+        </select>
+      </label>
+      <label>อายุ (ปี): <input type="number" id="age" required></label>
+      <label>น้ำหนัก (กก.): <input type="number" id="weight" required></label>
+      <label>ส่วนสูง (ซม.): <input type="number" id="height" required></label>
+      <button type="submit">คำนวณ</button>
+    </form>
+    <div id="bmrResult"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
